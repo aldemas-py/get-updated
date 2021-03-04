@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css" >
+	#slide{
+	position: relative;
+	margin: 90px;
+	width : 85%;
+	height : 350px;
+	align : center;
+	background-image: linear-gradient(to right, red , yellow , green);
+
+}
+	#body {
+  background-image: linear-gradient(to right, red , yellow , green);
+}
+</style>
+
+
+
+		</style>
+
+<script type="text/javascript">
+	var i = 0; //start point
+	var images = [];
+	var time = 3000;
+
+	//image list
+	images[0] = "images/image1.jpg"
+	images[1] = "images/image2.jpg"
+	images[2] = "images/image3.jpg"
+	images[3] = "images/image4.jpg"
+
+	//change image
+	function changeImg (){
+	 document.slide.src = images[i];
+
+	if (i <images.length - 1) {
+			i++;
+			}else {
+				 i = 0;
+			}
+
+		setTimeout("changeImg()", time)
+
+				 	
+		}
+			window.onload = changeImg; 
+		</script>
+</head>
+<body>
+  
+			<img name="slide" id="slide"/>
+
+
+
+</body>
+</html>
+
+
