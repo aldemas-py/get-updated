@@ -1,6 +1,6 @@
 <?php
 
-include_once "processes.php";
+// include_once "processes.php";
 
 if(isset($_POST['submit'])){
     
